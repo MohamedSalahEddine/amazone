@@ -1,0 +1,94 @@
+.header_container{
+    background-color: #121921;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 7%;
+}
+
+.icon_location{
+    margin-top: 10px;
+}
+
+.location{
+    color: white;
+    display: flex;
+    margin: 0px 10px;
+}
+.location_div{
+    display: flex;
+    flex-direction: column;
+    
+}
+.dz_up{
+
+    font-size: 11px;
+}
+
+.dz{
+    font-weight: bold;
+}
+
+.search_div{
+    margin: 0px 15px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    
+    
+    
+}
+.input{
+    flex: 1;
+    height: 33px;
+    border: none;
+    outline-width: 0;
+}
+.select{
+    background-color: #f3f3f3;
+    color: grey;
+    padding: 5px;
+    height: 35px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.searchIcon{
+    background-color: #fcbf67;
+    padding: 5.5px;
+    color:#121921;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.div_droite{
+    display: flex;
+    color: white;
+}
+
+.bonjour, .retour{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 15px;
+}
+.ligne_1{
+    font-size: 11px;
+}
+.ligne_2{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.bascketIcon{
+    margin: 0px 10px;
+    font-weight: bold;
+    
+}
+
+.basket{
+    display: flex;
+    align-items: center;
+}
