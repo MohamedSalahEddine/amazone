@@ -1,8 +1,9 @@
-.header_container{
+.header_container_up{
     background-color: #121921;
     padding: 10px;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .logo{
@@ -92,3 +93,49 @@
     display: flex;
     align-items: center;
 }
+
+
+/***************************************************** header down*/
+.header_container_down{
+    background-color: #232f39;
+    display: flex;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    padding: 5px;
+    justify-content: center;
+}
+.header_container_down  *{
+    cursor: pointer;
+}
+.header_container_down_left{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    font-size: small;
+    
+}
+.header_container_down_right{
+    display: flex;
+    
+}
+.header_container_down_left>span{
+    margin: 0px 10px;
+
+}
+
+.kk{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.prime{
+    color: #02a7ea;
+    margin-right: 10px;
+    
+}
+
+.prime_icon{
+    color: #02a7ea;
+    
+}
+
