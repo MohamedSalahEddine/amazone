@@ -21,7 +21,7 @@
     margin-top: 30px;
 }
 
-button{
+.buy_btn{
     width: 200px;
     
     background-color: #ffa41d;
@@ -30,7 +30,7 @@ button{
     padding: 7px 0px;
     cursor: pointer;
 }
-button:hover{
+.buy_btn:hover{
     transform: scale(1.1);
     color: white;
     font-weight: bold;
