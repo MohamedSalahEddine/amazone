@@ -13,6 +13,7 @@ class Header extends Component {
     state = {  } 
     render() { 
         return (
+            
             <div className='header_container'>
                 <div className='header_container_up'>
                     <img src="https://tinyurl.com/yeyvhatc" alt='logo' className='logo'/>
@@ -79,3 +80,4 @@ class Header extends Component {
 }
  
 export default Header;
+
