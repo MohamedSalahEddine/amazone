@@ -1,0 +1,39 @@
+.subtotal_container{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100px;
+    justify-content: space-around;
+    background-color: white;
+    padding: 10px;
+    border-radius: 3px;
+
+}
+.value{
+    margin-left: 10px;
+}
+.proceed{
+    background-color: #ffa41d;
+    width: fit-content;
+    margin: 0px auto;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5px 10px;
+    border: 1px solid #ffa41d;
+    cursor: pointer;
+}
+.proceed:hover{
+transform: scale(1.1);
+}
+
+.check{
+    display: flex;
+    align-items: center;
+}
+
+.check>input {
+    margin-right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}

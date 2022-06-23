@@ -8,13 +8,17 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 import PlayCircleFilledIcon from '@mui/icons-material/PlayCircleFilled';
 import { Link } from "react-router-dom";
+import { useStateValue } from './StateProvider';
 
-class Header extends Component {
-    state = {  } 
-    render() { 
-        return (
-            
-            <div className='header_container'>
+
+
+
+
+function Header() {
+    const[{basket}, dispatch]=useStateValue();
+
+  return (
+    <div className='header_container'>
                 <div className='header_container_up'>
                     <img src="https://tinyurl.com/yeyvhatc" alt='logo' className='logo'/>
                     <div className='location'>
@@ -48,10 +52,12 @@ class Header extends Component {
                             <span className='ligne_1'>Retours</span>
                             <span className='ligne_2'>et Commandes</span>
                         </div>
-                        <div className='basket'>
-                            <ShoppingBasketIcon className='bascketIcon'/>
-                            <span className='ligne_2'>Panier</span>
-                        </div>
+                        <Link to='./checkout'>
+                            <div className='basket'>
+                                <ShoppingBasketIcon className='bascketIcon'/>
+                                <span className='ligne_2'>{basket?.length}</span>
+                            </div>
+                        </Link>
                     </div>
                 </div>
                 <div className='header_container_down'>
@@ -75,9 +81,7 @@ class Header extends Component {
                     </div>
                 </div>
             </div>
-        );
-    }
+  )
 }
- 
-export default Header;
 
+export default Header

@@ -5,6 +5,7 @@ import Product from './Product';
 class Home extends Component {
     state = {  } 
     render() { 
+       
         return (
             <div className='home_container'>
                 <img src='https://tinyurl.com/2yzw5xbk' alt='amazone' className='home_image'/>

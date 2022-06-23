@@ -1,0 +1,32 @@
+.CheckoutProduct_container{
+    display: flex;
+    height: fit-content;
+    padding: 20px 0px;
+    justify-content: space-between;
+}
+.cp_image{
+    width: 200px;
+    height: fit-content;
+    margin-right: 10px;
+}
+.cp_left{
+
+}
+
+
+.cp_title,.cp_rating{
+    margin: 10px 0px;
+}
+.cp_right{
+    display: flex;
+    flex-direction: column;
+}
+
+.remove_btn{
+    width: fit-content;
+    background-color: #ffa41d;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
