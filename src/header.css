@@ -12,7 +12,10 @@
     z-index: 100;
     top: 0;
 }
-
+.bonjour, .basket{
+    text-decoration: none;
+    color: white;
+}
 .logo{
     width: 7%;
 }

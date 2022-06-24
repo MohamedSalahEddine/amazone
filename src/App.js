@@ -10,14 +10,16 @@ import {
   Route,
 } from "react-router-dom";
 import Product from './Product';
+import Login from './Login';
 
 function App() {
   return (
     <BrowserRouter>
-      <Header/>
+      
       <Routes>
-        <Route path={'/'} element={<Home/>}/>
-        <Route path={'/checkout'} element={<Checkout/>}/>
+        <Route path={'/'} element={<><Header/><Home/></>}/>
+        <Route path={'/checkout'} element={<><Header/><Checkout/></>}/>
+        <Route path={'/login'} element={<Login/>}/>
       </Routes>
     </BrowserRouter>
     

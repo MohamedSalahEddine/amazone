@@ -44,10 +44,11 @@ function Header() {
                     </div>
                     
                     <div className='div_droite'>
-                        <div className='bonjour'>
-                            <span className='ligne_1'>Bonjour, identifiez-vous</span>
-                            <span className='ligne_2'>Compte et listes </span>
-                        </div>
+                        <Link to='./login'><div className='bonjour'>
+                                <span className='ligne_1'>Bonjour, identifiez-vous</span>
+                                <span className='ligne_2'>Compte et listes </span>
+                            </div>
+                        </Link>
                         <div className='retour'>
                             <span className='ligne_1'>Retours</span>
                             <span className='ligne_2'>et Commandes</span>

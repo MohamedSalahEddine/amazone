@@ -1,0 +1,73 @@
+.login_container{
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.login_logo{
+    width: 10%;
+}
+
+.login_para a{
+    color: cornflowerblue;
+}
+
+.login_main{
+    border: 1px solid lightgray;
+    padding: 20px;
+    border-radius: 4px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0px;
+}
+
+.login_btn{
+    background: linear-gradient(to bottom, #fdebbd, #eac05d);
+    border: 1px solid #978a67;
+    height: 25px;
+    border-radius: 3px;
+}
+.login_input{
+    border-radius: 3px;
+    margin-bottom: 15px;
+    height: 25px;
+    border: 1px solid #978a67;
+    outline-width: 0px;
+}
+
+.login_adresse{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+.login_para{
+    font-size: 11px;
+    margin: 10px 0px;
+}
+.div_nouveau{
+    display: flex;
+    flex-direction: column;
+    color: gray;
+}
+.login_container button{
+    cursor: pointer;
+}
+input:focus{
+    box-shadow: 0px 0px 5px orangered;
+}
+
+.avez_vous{
+    display: flex;
+    color:cornflowerblue;
+}
+.span_nouveau{
+    text-align: center;
+    margin: 5px 0;
+}
+.btn_nouveau{
+    padding: 5px 70px;
+}

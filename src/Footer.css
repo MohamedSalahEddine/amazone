@@ -1,0 +1,17 @@
+.container_footer{
+    border-top: 2px solid lightgray;
+    margin-top: 20px;
+}
+
+.container_footer_top >span{
+    font-size: 12px;
+    color: cornflowerblue;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.container_footer_down{
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+}
