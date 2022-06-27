@@ -1,35 +1,57 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Login.css';
 import Footer from './Footer.js';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
-
+import {createUserWithEmailAndPassword} from 'firebase/auth';
+import {auth} from './firebase.js';
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
 
+  const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   console.log(email)
 
   const sign_in = e =>{
-    e.preventDefault();
+    try{
+      const user = await createUserWithEmailAndPassword(auth, email, password);
+      if(user){
+        if (user){
+            return navigate("/");
+        }
+      }
+      console.log(user);
+    }catch(error){
+      console.log(error.message);
+    }
   }
 
-  const sign_up = e =>{
-    /*e.preventDefault();
-    auth.createUserWithEmailAndPassword(email, password).then((auth)=>{
-      console.log(auth)
-    }).catch(error => alert(error.message))*/
+  const register = async () =>{
+    
+    try{
+      const user = await createUserWithEmailAndPassword(auth, email, password);
+      if(user){
+        if (user){
+            return navigate("/");
+        }
+      }
+      console.log(user);
+    }catch(error){
+      console.log(error.message);
+    }
+
   }
 
   return (
     <div className='login_container'>
-      <img src='https://tinyurl.com/yeyvhatc' alt='amazon' className='login_logo'/>
+      <img src='https://tinyurl.com/mrxnffh2' alt='amazon' className='login_logo'/>
       <div className='login_main'>
         <h2 className='login_sidentifier'>S'identifier</h2>
         <span className='login_adresse'>Adresse e-mail ou numéro de téléphone<br/> portable</span>
         <input type="text" className='login_input' onChange={e=> setEmail(e.target.value)} value={email}/>
-        <input type="text" className='login_input' onChange={f=> setPassword(f.target.value)} value={password}/>
+        <input type="password" className='login_input' onChange={f=> setPassword(f.target.value)} value={password}/>
         <button onClick={sign_in} className='login_btn'>Continuer</button>
         <p className='login_para'>En passant votre commande, vous acceptez les<br/>
             <a>Conditions générales de vente</a> d’Amazon.
@@ -42,7 +64,8 @@ function Login() {
       </div>
       <div className='div_nouveau'>
         <span className='span_nouveau'>Nouveau chez Amazon ?</span>
-        <button onClick={sign_up} className='btn_nouveau'>Créer votre compte Amazon</button>
+        
+        <button onClick={register} className='btn_nouveau'>Créer votre compte Amazon</button>
       </div>
       <Footer/>
     </div>
