@@ -9,13 +9,16 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import PlayCircleFilledIcon from '@mui/icons-material/PlayCircleFilled';
 import { Link } from "react-router-dom";
 import { useStateValue } from './StateProvider';
-
+import {auth} from './firebase.js';
 
 
 
 
 function Header() {
-    const[{basket}, dispatch]=useStateValue();
+    const[{basket, user}, dispatch]=useStateValue();
+    console.log(user)
+
+    
 
   return (
     <div className='header_container'>
@@ -44,9 +47,10 @@ function Header() {
                     </div>
                     
                     <div className='div_droite'>
-                        <Link to='./login'><div className='bonjour'>
-                                <span className='ligne_1'>Bonjour, identifiez-vous</span>
-                                <span className='ligne_2'>Compte et listes </span>
+                        <Link to='./login'>
+                            <div className='bonjour'>
+                                <span className='ligne_1'>Bonjour,</span>
+                                <span className='ligne_2'> </span>
                             </div>
                         </Link>
                         <div className='retour'>
